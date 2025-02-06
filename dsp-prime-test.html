@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="./dsp-prime.js"
+      data-pid="test-pid"
+      data-events='[{ "event": "AddToCart", "button": "add" }, { "event": "Purchase", "button": "checkout" }]'
+    ></script>
+  </head>
+  <body>
+    <h1>DSP Prime Test Page</h1>
+    <p>Form element wraps everything below:</p>
+
+    <form>
+      <div>
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+
+      <div>
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="true" />
+      </div>
+
+      <label for="color">color:</label>
+      <select id="color" name="color">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+      </select>
+
+      <div>
+        <button type="button">add</button>
+        <button type="button">checkout</button>
+      </div>
+    </form>
+  </body>
+</html>
